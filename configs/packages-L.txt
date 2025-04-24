@@ -1,5 +1,6 @@
 #kmod
 CONFIG_PACKAGE_kmod-usb-net-rndis=y
+CONFIG_PACKAGE_r8152-firmware=y
 
 
 #themes
