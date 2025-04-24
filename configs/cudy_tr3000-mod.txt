@@ -1,0 +1,7 @@
+CONFIG_TARGET_mediatek=y
+CONFIG_TARGET_mediatek_filogic=y
+CONFIG_TARGET_mediatek_filogic_DEVICE_cudy_tr3000-mod=y
+CONFIG_TARGET_BOARD="mediatek"
+CONFIG_TARGET_SUBTARGET="filogic"
+CONFIG_TARGET_PROFILE="DEVICE_cudy_tr3000-mod"
+CONFIG_TARGET_ARCH_PACKAGES="aarch64_cortex-a53"
