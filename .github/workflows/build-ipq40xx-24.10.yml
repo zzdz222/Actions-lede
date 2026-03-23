@@ -27,8 +27,8 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   PLATFORM_FILE: configs/ipq40xx.txt
-  CONFIG_FILE: configs/Packages-L.txt
-  CONFIG_5G: configs/Packages-5G.txt
+  CONFIG_FILE: configs/ipq40xx-packages-L
+  CONFIG_5G: configs/ipq40xx-packages-5G
   SETTINGS_SH: scripts/init-settings.sh
   PACKAGES_SH: scripts/packages.sh
   INSTALL5G_SH: scripts/install-5G.sh
