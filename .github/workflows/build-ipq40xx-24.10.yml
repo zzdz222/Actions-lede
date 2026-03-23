@@ -186,7 +186,7 @@ jobs:
       shell: bash
       run: |
         cd openwrt/bin/targets/*/*
-        for file in *mediatek-filogic-*.bin; do
+        for file in *ipq40xx-*.bin; do
           new_name=$(echo "$file" | sed 's/mediatek-filogic-//')
           mv -v "$file" "$new_name"
         done
@@ -203,7 +203,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && !cancelled()
       run: |
         echo -e "🎉 ipq40xx-24.10平台\n✅ 主线源码\n❗️ ip地址 : 192.168.8.1" >> release.txt
-        echo "release_tag=$(date +"%Y.%m.%d_MTK")" >> $GITHUB_OUTPUT
+        echo "release_tag=$(date +"%Y.%m.%d_ipq40xx")" >> $GITHUB_OUTPUT
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: 上传固件到发布
